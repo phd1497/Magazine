@@ -1,0 +1,539 @@
+body{
+    font-family: 'Droid Serif', serif;
+    font-size: 14px;
+    color: #2f2f2f;
+    background-color: #faedcd;
+}
+
+header{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 80px;
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 72px;
+    margin:50px 0 20px 0;
+}
+
+.head{
+    text-align: center;
+    position: relative;
+}
+
+p{
+    text-align: left;
+}
+
+#chatbox{
+    margin: 15px;
+    padding: 40px;
+    color: #00C853;
+    background-color: #eee  ;
+    position: fixed;
+    bottom: 0;
+    right: 1px;
+    border: 3px solid #5fd2ff;
+    border-radius: 50%;
+    background-image: url("logo_school.png");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  }
+
+.subhead{
+    text-transform: uppercase;
+    border-bottom: 2px solid #2f2f2f;
+    border-top: 2px solid #2f2f2f;
+    padding: 12px 0 12px 0;
+    text-align: center;
+}
+
+.content, .list-product{
+    display: flex;
+    flex-wrap: wrap;        
+}
+
+.column{
+    font-size: 14px;
+    width: 17.5%;
+    padding: 0 1% 0 1%;
+    margin-bottom: 10px;
+    border-left: 1px solid #000000;
+    margin-top: 2rem;
+    transition: all .7s;
+}
+
+.head-title{
+    text-align: center;
+}
+
+.head-name{
+    margin: 0 auto;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 36px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+
+.headline{
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    display: block;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 10px 0 10px 0;
+    border-top: 1px solid #2f2f2f;
+    border-bottom: 1px solid #2f2f2f;
+}
+
+
+.img1{
+    display: block;
+    width: 90%;
+}
+
+.img2{
+    display: inline-block;
+    width: 50%;
+}
+
+
+
+@media all and (max-width: 1200px) {
+    .column{
+        width: 31%;
+    }
+
+}
+    @media all and (max-width: 900px) {
+    .column{
+        width: 47%;
+    }
+
+}
+@media all and (max-width: 600px) {
+    .column{
+        width: 100%;
+    }
+	.column{
+		border-left: none;
+      	border-bottom: 1px solid #2f2f2f;
+	}
+    header{
+        max-width: 320px;
+        font-size: 60px;
+        line-height: 54px;
+    }
+
+}
+
+.content2, .content3{
+    display: flex;
+    margin-left: 10px;
+}
+
+.uow, .wif{
+    margin-top: 2rem;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+
+.para1{
+    width: 300px;
+    font-size: 16px;
+    padding: 0 1% 0 1%;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    margin-top: 2rem;
+    transition: width 3s;
+    transition-timing-function: ease-in-out;
+}
+
+.para1:hover{
+    width: 80%;
+    font-size: 20px;
+}
+
+
+hr{
+    width: 100%;
+}
+
+.header2{
+    text-align: center;
+    position: relative;
+    padding: 2rem 0 0 0;
+}
+
+h1{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.para2{
+    width: 300px;
+    font-size: 20px;
+    padding: 0 1% 0 1%;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    transform: rotate(50deg);
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.para2:hover{
+    transform: rotate(0deg);
+    margin-left:0;
+}
+
+
+.title4:hover {
+    animation: disappear 1s forwards;
+}
+
+.title4:not(:hover) {
+    animation: appear 2s forwards;
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.title5 {
+    transform: rotate(180deg);
+    transition: transform 0.5s ease;
+}
+
+.title5:hover {
+    animation: continuous-rotation 0.5s linear infinite;
+}
+
+@keyframes continuous-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.topnav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;;
+    position: fixed;
+    background-color:rgb(170, 237, 237);
+    border: 1px solid rgb(38, 26, 116);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+a{
+    padding: 2px 2rem 2px 2rem;
+    margin: 2px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.topnav a:hover{
+    background: rgb(238, 132, 32);
+    color: #faedcd;
+}
+
+/* List of product */
+.title-product{
+    margin: 20px 0 10px 0 ;
+    font-size: 40px;
+    text-align: center;
+}
+
+.product{
+     display: flex;
+     border: 1px solid black;
+}
+
+.dtl-prd{
+    all: unset;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text1{
+    padding-top: 10px;
+}
+
+.checked {
+    color: orange;
+  }
+
+.rating{
+    all:unset;
+    font-size: 20px;
+}
+
+.item-price{
+    font-size: 30px;
+}
+
+.price{
+    position: relative;
+    top: -0.9em;
+    font-size: 13px;
+}
+
+.main-price{
+    padding: 0%;
+    margin: 0%;
+}
+
+.price-sale{
+    border: 1px solid black;
+    padding: 3px;
+    width: 60px;
+    align-items: center;
+    background-color: #00C853;
+}
+
+.discount{
+    display: flex;
+    padding: 3px;
+}
+
+.title-sale{
+    padding: 3px
+}
+
+.btn-add{
+    all: unset;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: yellow;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn{
+background-color: yellow;
+}
+
+
+/* This is Javascript part */
+
+/* From Uiverse.io by rajvi418 */ 
+.btn-rd {
+    position: relative;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 48px;
+    width: 160px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 55px;
+    -webkit-box-reflect: bottom 1px linear-gradient(transparent, #0004);
+    border-radius: 50px;
+  }
+  
+  .btn-rd span {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+    text-align: center;
+    background: #2e2e2e;
+    color: rgba(255, 255, 255, 0.781);
+    transition: 0.5s;
+    z-index: 1;
+    border-radius: 100px;
+  }
+  
+  .btn-rd:hover span {
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  .btn-rd::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: 400%;
+    opacity: 0;
+    transition: 0.5s;
+    background: linear-gradient(
+      45deg,
+      #91155d,
+      #525296,
+      #0f0,
+      #ff0,
+      #fb0094,
+      #00f,
+      #0f0,
+      #ff0
+    );
+    animation: animate123 20% linear infinte;
+  }
+  
+  .btn-rd::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: 400%;
+    filter: blur(20px);
+    transition: 0.5s;
+    border-radius: 100px;
+    animation: animate123 20% linear infinte;
+  }
+  
+  .btn-rd:hover::before,
+  .btn-rd:hover::after {
+    opacity: 1;
+    border-radius: 100px;
+  }
+  
+  @keyframes animate123 {
+    0% {
+      background-position: 0 0;
+    }
+  
+    50% {
+      background-position: 300% 0;
+    }
+  
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .btn-rd span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+
+.big-gr-info{
+    display: flex;
+}
+
+.header-js{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+
+label,
+input {
+  display: table-cell;
+  margin-bottom: 10px;
+}
+
+.btn-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.gr-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: auto;
+    width: 300px;
+}
+
+
+.rd-quote{
+    display: flex;
+    border-top: 1px solid black;
+    margin: auto;
+    width: 300px;
+    height: 100px;
+}
+.lucky-guys{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.list-lucky{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 300px;
+}
+
+.gr-del-cus{
+    display: flex;
+    margin-top: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.add-lucky{
+    position: relative;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    width: 160px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 25px;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+.nm-del-cus{
+    width: 100%;
+    height: 20px;
+}
+
+.btn-del{
+    border: 1px solid black;
+    cursor: pointer;
+}
